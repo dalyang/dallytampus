@@ -3,104 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Dally | Real Estate Social Media</title>
 <meta name="description" content="Social media for US real estate agents. Your listings, posted. Your leads, answered.">
-<meta property="og:title" content="Dally | Real Estate Social Media">
-<meta property="og:description" content="Your listings, posted. Your leads, answered.">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="icon" href="../favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--wine:#4E1220;--burgundy:#7A1F2B;--white:#FAF7F2;--cream:#F3ECE2;--beige:#E8DCCB;--sand:#CBB79A;--gold:#94764F;--ink:#2B2B2B;--muted:#6E5F57;--line:#E6DBCC;--serif:'Fraunces',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+:root{--wine:#4E1220;--burgundy:#7A1F2B;--white:#FAF7F2;--cream:#F3ECE2;--sand:#CBB79A;--gold:#94764F;--ink:#2B2B2B;--muted:#7A6A61;--line:#E6DBCC;--serif:'Fraunces',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--white)}
 body{background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
-.page{max-width:440px;margin:0 auto;padding:44px 22px 40px}
+.page{max-width:420px;margin:0 auto;padding:56px 24px 48px}
 header{text-align:center}
-.photo{width:112px;height:112px;border-radius:50%;background:var(--beige);overflow:hidden;margin:0 auto;border:1px solid var(--sand)}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
-.name{font-size:12px;letter-spacing:.32em;color:var(--wine);font-weight:500;margin-top:20px}
-.role{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:6px;font-weight:500}
-.rule{width:40px;height:1px;background:var(--sand);margin:22px auto}
-.tag{font-family:var(--serif);font-weight:300;font-size:25px;line-height:1.3;color:var(--wine);letter-spacing:-.01em}
+.mono{width:40px;height:40px;display:block;margin:0 auto}
+.sig{font-family:'Great Vibes',cursive;font-size:58px;line-height:1;color:var(--wine);margin-top:22px}
+.role{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-top:10px;font-weight:400}
+.rule{width:40px;height:1px;background:var(--sand);margin:28px auto}
+.tag{font-family:var(--serif);font-weight:300;font-size:24px;line-height:1.3;color:var(--wine);letter-spacing:-.01em}
 .tag em{font-style:italic}
-.hours{font-size:13px;color:var(--muted);margin-top:12px}
-.hours b{color:var(--gold);font-weight:500}
-.cta{display:block;text-decoration:none;text-align:center;background:var(--wine);color:var(--white);padding:18px 20px;margin-top:32px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;transition:background .25s}
+.hours{font-size:12px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
+.cta{display:block;text-decoration:none;text-align:center;background:var(--wine);color:var(--white);padding:18px 20px;margin-top:40px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;transition:background .25s}
 .cta:hover,.cta:focus{background:var(--burgundy)}
-.cta-note{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
-nav{margin-top:32px;border-top:1px solid var(--line)}
-nav a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--ink);padding:19px 2px;border-bottom:1px solid var(--line);font-size:15.5px;font-weight:400;transition:color .2s}
-nav a small{display:block;font-size:13px;color:var(--muted);font-weight:300;margin-top:2px}
-nav a span{font-family:var(--serif);color:var(--sand);font-size:19px;transition:transform .2s}
+.cta-note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
+nav{margin-top:40px;border-top:1px solid var(--line)}
+nav a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:var(--ink);padding:20px 2px;border-bottom:1px solid var(--line);font-size:15px;font-weight:400;transition:color .2s,padding .2s}
+nav a span{font-family:var(--serif);color:var(--sand);font-size:18px;transition:transform .2s}
 nav a:hover,nav a:focus{color:var(--wine)}
 nav a:hover span,nav a:focus span{transform:translateX(4px);color:var(--wine)}
-.work{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:36px}
-.work a{display:block;aspect-ratio:4/5;overflow:hidden;background:var(--cream)}
-.work img{width:100%;height:100%;object-fit:cover;display:block}
-.work-note{font-size:13px;color:var(--muted);text-align:center;margin-top:10px}
-.work-note a{color:var(--wine)}
-section{margin-top:52px}
-.label{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:center;font-weight:500}
-h2{font-family:var(--serif);font-weight:300;color:var(--wine);font-size:29px;text-align:center;margin-top:8px}
+section{margin-top:64px}
+.label{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);text-align:center}
+h2{font-family:var(--serif);font-weight:300;color:var(--wine);font-size:30px;text-align:center;margin-top:10px;letter-spacing:-.01em}
 h2 em{font-style:italic}
-.tiers{margin-top:22px;border-top:1px solid var(--line)}
-.tier{padding:17px 0;border-bottom:1px solid var(--line)}
+.tiers{margin-top:28px;border-top:1px solid var(--line)}
+.tier{padding:20px 0;border-bottom:1px solid var(--line)}
 .tier .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .tier .nm{font-size:15px;font-weight:400}
-.tier .pr{font-family:var(--serif);font-weight:300;font-size:19px;color:var(--wine);white-space:nowrap}
-.tier .ds{font-size:13.5px;color:var(--muted);margin-top:3px}
+.tier .pr{font-family:var(--serif);font-weight:300;font-size:20px;color:var(--wine);white-space:nowrap}
+.tier .ds{font-size:13.5px;color:var(--muted);margin-top:4px}
 .tier.core .nm{color:var(--wine);font-weight:500}
-.more{display:block;text-align:center;margin-top:16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);text-decoration:none;font-weight:500}
-footer{text-align:center;margin-top:52px}
-footer svg{width:20px;height:19px}
-footer p{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.tier.core .nm small{display:block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:400;margin-top:2px}
+.terms{font-size:12.5px;color:var(--muted);margin-top:16px;text-align:center}
+.faq{margin-top:28px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:15px;font-weight:400}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--serif);color:var(--sand);font-size:20px;line-height:1}
+details[open] summary:after{content:"−"}
+details p{font-size:14px;color:var(--muted);margin-top:8px}
+footer{text-align:center;margin-top:64px}
+footer .mono{width:24px;height:24px;opacity:.8}
+footer p{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:12px}
 </style>
 </head>
 <body>
 <div class="page">
   <header>
-    <div class="photo"><img src="../img/dally-portrait.png" alt="Dally Tampus"></div>
-    <div class="name">DALLY TAMPUS</div>
-    <div class="role">Social media for real estate</div>
+    <svg class="mono" viewBox="-20 -20 250 240" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
+    <div class="sig">Dally</div>
+    <div class="role">Real estate social media</div>
     <div class="rule"></div>
     <p class="tag">Your listings, posted.<br><em>Your leads, answered.</em></p>
-    <p class="hours">Monday to Friday · <b>9 to 5 Eastern</b></p>
+    <p class="hours">Monday to Friday · 9 to 5 Eastern</p>
   </header>
 
   <a class="cta" href="https://forms.gle/93WEkjmuSbftu5958" target="_blank" rel="noopener">Request your free profile audit</a>
   <p class="cta-note">Three clear fixes, within two business days.</p>
 
   <nav aria-label="Links">
-    <a href="../#work"><div>See my work<small>Case studies, Reels and designs</small></div><span>→</span></a>
-    <a href="../#services"><div>Services and prices<small>From a free audit to monthly plans</small></div><span>→</span></a>
-    <a href="https://calendar.app.google/aedEAh1sMoKRFKx78" target="_blank" rel="noopener"><div>Book a 20-minute call<small>Pick a time, 9 to 5 Eastern</small></div><span>→</span></a>
-    <a href="https://ig.me/m/dallytampus" target="_blank" rel="noopener"><div>Message me on Instagram<small>Answered Monday to Friday</small></div><span>→</span></a>
-    <a href="https://www.linkedin.com/in/dallytampus" target="_blank" rel="noopener"><div>Connect on LinkedIn<small>For brokers and team leaders</small></div><span>→</span></a>
+    <a href="#services">Work with me <span>→</span></a>
+    <a href="../">Selected work <span>→</span></a>
+    <a href="https://calendar.app.google/aedEAh1sMoKRFKx78" target="_blank" rel="noopener">Book a 20-minute call <span>→</span></a>
+    <a href="https://ig.me/m/dallytampus" target="_blank" rel="noopener">Send a message <span>→</span></a>
   </nav>
 
-  <div class="work">
-    <a href="../#work"><img loading="lazy" src="../img/pearl-reel-1.jpg" alt="Reel for a jewelry brand"></a>
-    <a href="../#work"><img loading="lazy" src="../img/pearl-g13.jpg" alt="Post design for a jewelry brand"></a>
-    <a href="../#work"><img loading="lazy" src="../img/farm-trays.jpg" alt="Egg campaign: 155 trays sold in one day"></a>
-  </div>
-  <p class="work-note">47.9K views for a jewelry brand · 155 trays sold in one day · <a href="../#work">see the work</a></p>
-
-  <section>
+  <section id="services">
     <div class="label">Services</div>
     <h2>Work <em>with me</em></h2>
     <div class="tiers">
-      <div class="tier"><div class="row"><div class="nm">Profile Glow-Up</div><div class="pr">$397</div></div><div class="ds">One-time refresh: bio, highlights, link page, pinned posts.</div></div>
-      <div class="tier"><div class="row"><div class="nm">Essentials</div><div class="pr">$750 / mo</div></div><div class="ds">12 posts a month, stories, captions and scheduling.</div></div>
-      <div class="tier core"><div class="row"><div class="nm">Signature</div><div class="pr">$1,200 / mo</div></div><div class="ds">16 posts, listing launches, and replies to your comments and messages, 9 to 5 Eastern.</div></div>
-      <div class="tier"><div class="row"><div class="nm">Team / Concierge</div><div class="pr">from $1,800</div></div><div class="ds">For teams and brokerages, with recruiting content and lead follow-up.</div></div>
+      <div class="tier"><div class="row"><div class="nm">Essentials</div><div class="pr">$750 / mo</div></div><div class="ds">Twelve posts a month, weekly stories, captions and scheduling.</div></div>
+      <div class="tier core"><div class="row"><div class="nm">Signature<small>Recommended</small></div><div class="pr">$1,200 / mo</div></div><div class="ds">Everything in Essentials, plus listing launches and replies to your comments and messages, nine to five Eastern.</div></div>
+      <div class="tier"><div class="row"><div class="nm">Team</div><div class="pr">from $1,800</div></div><div class="ds">For teams and brokerages, with recruiting content and lead follow-up.</div></div>
+      <div class="tier"><div class="row"><div class="nm">Profile Glow-Up</div><div class="pr">$397</div></div><div class="ds">A one-time refresh of your profile, highlights and link page.</div></div>
       <div class="tier"><div class="row"><div class="nm">Property managers</div><div class="pr">from $900</div></div><div class="ds">Vacancy marketing, rental lead follow-up and owner reports.</div></div>
     </div>
-    <a class="more" href="../#services">Full details →</a>
+    <p class="terms">Three-month start, then month to month. You own every post.</p>
+  </section>
+
+  <section id="faq">
+    <div class="label">Questions</div>
+    <h2>Before <em>we begin</em></h2>
+    <div class="faq">
+      <details><summary>When can I reach you?</summary><p>Monday to Friday, 9 to 5 Eastern. Messages in those hours are answered the same day.</p></details>
+      <details><summary>Do I approve posts first?</summary><p>Always. You see each week's posts before anything goes out.</p></details>
+      <details><summary>Do you use AI?</summary><p>For speed, yes. Every word is written in your voice and checked by me. AI-staged photos are always labeled.</p></details>
+      <details><summary>How do we start?</summary><p>With a free profile audit. If the fixes feel right, we book a short call.</p></details>
+    </div>
   </section>
 
   <footer>
-    <svg viewBox="0 0 210 200" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
+    <svg class="mono" viewBox="-20 -20 250 240" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
     <p>Dally Tampus</p>
   </footer>
 </div>
