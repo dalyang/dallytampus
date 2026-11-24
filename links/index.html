@@ -3,106 +3,236 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Dally | Real Estate Social Media</title>
 <meta name="description" content="Social media for US real estate agents. Your listings, posted. Your leads, answered.">
+<meta property="og:title" content="Dally | Real Estate Social Media">
+<meta property="og:description" content="Free audit · services · previous work · book a call">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--wine:#4E1220;--burgundy:#7A1F2B;--white:#FAF7F2;--cream:#F3ECE2;--sand:#CBB79A;--gold:#94764F;--ink:#2B2B2B;--muted:#7A6A61;--line:#E6DBCC;--serif:'Fraunces',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+:root{--wine:#4E1220;--burgundy:#7A1F2B;--white:#FAF7F2;--cream:#F3ECE2;--beige:#E8DCCB;--sand:#CBB79A;--gold:#94764F;--ink:#2B2B2B;--muted:#6E5F57;--line:#E6DBCC;--serif:'Fraunces',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--white)}
 body{background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
-.page{max-width:420px;margin:0 auto;padding:56px 24px 48px}
+.page{max-width:440px;margin:0 auto;padding:44px 22px 40px}
+a{color:inherit}
+img{display:block;max-width:100%}
 header{text-align:center}
-.mono{width:40px;height:40px;display:block;margin:0 auto}
-.sig{font-family:'Great Vibes',cursive;font-size:58px;line-height:1;color:var(--wine);margin-top:22px}
-.role{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-top:10px;font-weight:400}
-.rule{width:40px;height:1px;background:var(--sand);margin:28px auto}
+.mono{width:34px;height:33px;display:block;margin:0 auto}
+.sig{font-family:'Great Vibes',cursive;font-size:56px;line-height:1;color:var(--wine);margin-top:16px}
+.role{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:8px;font-weight:500}
+.rule{width:40px;height:1px;background:var(--sand);margin:22px auto}
 .tag{font-family:var(--serif);font-weight:300;font-size:24px;line-height:1.3;color:var(--wine);letter-spacing:-.01em}
 .tag em{font-style:italic}
-.hours{font-size:12px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
-.cta{display:block;text-decoration:none;text-align:center;background:var(--wine);color:var(--white);padding:18px 20px;margin-top:40px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;transition:background .25s}
-.cta:hover,.cta:focus{background:var(--burgundy)}
-.cta-note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
-nav{margin-top:40px;border-top:1px solid var(--line)}
-nav a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:var(--ink);padding:20px 2px;border-bottom:1px solid var(--line);font-size:15px;font-weight:400;transition:color .2s,padding .2s}
-nav a span{font-family:var(--serif);color:var(--sand);font-size:18px;transition:transform .2s}
-nav a:hover,nav a:focus{color:var(--wine)}
-nav a:hover span,nav a:focus span{transform:translateX(4px);color:var(--wine)}
-section{margin-top:64px}
-.label{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);text-align:center}
-h2{font-family:var(--serif);font-weight:300;color:var(--wine);font-size:30px;text-align:center;margin-top:10px;letter-spacing:-.01em}
+.hours{font-size:13px;color:var(--muted);margin-top:10px}
+.hours b{color:var(--gold);font-weight:500}
+.ask{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);text-align:center;margin-top:36px;font-weight:500}
+.doors{display:grid;gap:12px;margin-top:16px}
+.door{display:flex;align-items:center;gap:16px;text-decoration:none;background:#fff;border:1px solid var(--line);padding:20px 18px;transition:border-color .2s,transform .2s}
+.door:hover,.door:focus{border-color:var(--sand);transform:translateY(-1px)}
+.door .n{font-family:var(--serif);font-style:italic;color:var(--sand);font-size:22px;width:26px;flex:none}
+.door .tx{flex:1;min-width:0}
+.door .tt{display:block;font-size:16px;font-weight:500;color:var(--wine)}
+.door .ds{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+.door .ar{font-family:var(--serif);color:var(--sand);font-size:20px}
+.door.main{background:var(--wine);border-color:var(--wine)}
+.door.main .tt{color:var(--white)}
+.door.main .ds{color:#E8DCCB}
+.view{display:none}
+.view.on{display:block}
+.back{display:inline-block;text-decoration:none;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500;padding:6px 0}
+.vlabel{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-top:28px}
+h2{font-family:var(--serif);font-weight:300;color:var(--wine);font-size:32px;line-height:1.15;margin-top:8px;letter-spacing:-.01em}
 h2 em{font-style:italic}
-.tiers{margin-top:28px;border-top:1px solid var(--line)}
-.tier{padding:20px 0;border-bottom:1px solid var(--line)}
+.intro{color:var(--muted);margin-top:12px;font-size:15px}
+.cta{display:block;text-decoration:none;text-align:center;background:var(--wine);color:var(--white);padding:18px 20px;margin-top:28px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;transition:background .25s}
+.cta:hover,.cta:focus{background:var(--burgundy)}
+.cta2{display:block;text-align:center;margin-top:14px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);text-decoration:none;font-weight:500}
+.note{font-size:13px;color:var(--muted);text-align:center;margin-top:10px}
+.list{list-style:none;margin-top:22px;border-top:1px solid var(--line);counter-reset:i}
+.list li{padding:14px 0 14px 30px;border-bottom:1px solid var(--line);position:relative;font-size:15px}
+.list li:before{content:counter(i,decimal-leading-zero);counter-increment:i;position:absolute;left:0;top:15px;font-family:var(--serif);font-style:italic;color:var(--sand);font-size:14px}
+.tiers{margin-top:22px;border-top:1px solid var(--line)}
+.tier{padding:17px 0;border-bottom:1px solid var(--line)}
 .tier .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-.tier .nm{font-size:15px;font-weight:400}
+.tier .nm{font-size:15px;font-weight:500}
+.tier .nm small{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-top:2px}
 .tier .pr{font-family:var(--serif);font-weight:300;font-size:20px;color:var(--wine);white-space:nowrap}
 .tier .ds{font-size:13.5px;color:var(--muted);margin-top:4px}
-.tier.core .nm{color:var(--wine);font-weight:500}
-.tier.core .nm small{display:block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:400;margin-top:2px}
-.terms{font-size:12.5px;color:var(--muted);margin-top:16px;text-align:center}
-.faq{margin-top:28px;border-top:1px solid var(--line)}
-details{border-bottom:1px solid var(--line);padding:18px 0}
+.tier.core{background:var(--cream);margin:0 -12px;padding-left:12px;padding-right:12px}
+.tier.core .nm{color:var(--wine)}
+.terms{font-size:12.5px;color:var(--muted);margin-top:14px}
+.case{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.case .who{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.case h3{font-family:var(--serif);font-weight:300;color:var(--wine);font-size:23px;line-height:1.2;margin-top:6px}
+.case h3 em{font-style:italic}
+.case p{font-size:14px;color:var(--muted);margin-top:8px}
+.stats{display:grid;grid-template-columns:1fr 1fr;margin-top:14px;border-top:1px solid var(--line)}
+.stats div{padding:12px 0;border-bottom:1px solid var(--line)}
+.stats b{display:block;font-family:var(--serif);font-weight:300;font-size:27px;color:var(--wine);line-height:1.1}
+.stats span{font-size:12.5px;color:var(--muted)}
+.src{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:14px}
+.grid img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--cream)}
+.grid.reels img{aspect-ratio:9/16}
+.faq{margin-top:22px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:16px 0}
 summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:15px;font-weight:400}
 summary::-webkit-details-marker{display:none}
-summary:after{content:"+";font-family:var(--serif);color:var(--sand);font-size:20px;line-height:1}
+summary:after{content:"+";font-family:var(--serif);color:var(--gold);font-size:20px;line-height:1}
 details[open] summary:after{content:"−"}
 details p{font-size:14px;color:var(--muted);margin-top:8px}
-footer{text-align:center;margin-top:64px}
-footer .mono{width:24px;height:24px;opacity:.8}
-footer p{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+footer{text-align:center;margin-top:48px}
+footer .socials{display:flex;justify-content:center;gap:22px;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+footer .socials a{text-decoration:none;color:var(--wine);font-weight:500}
+footer p{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:14px}
 </style>
 </head>
 <body>
 <div class="page">
+
+<div class="view on" id="v-home">
   <header>
-    <svg class="mono" viewBox="-20 -20 250 240" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
+    <svg class="mono" viewBox="0 0 210 200" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
     <div class="sig">Dally</div>
-    <div class="role">Real estate social media</div>
+    <div class="role">Social media for real estate agents</div>
     <div class="rule"></div>
     <p class="tag">Your listings, posted.<br><em>Your leads, answered.</em></p>
-    <p class="hours">Monday to Friday · 9 to 5 Eastern</p>
+    <p class="hours">Monday to Friday · <b>9 to 5 Eastern</b></p>
   </header>
-
-  <a class="cta" href="https://forms.gle/93WEkjmuSbftu5958" target="_blank" rel="noopener">Request your free profile audit</a>
-  <p class="cta-note">Three clear fixes, within two business days.</p>
-
-  <nav aria-label="Links">
-    <a href="#services">Work with me <span>→</span></a>
-    <a href="../">Selected work <span>→</span></a>
-    <a href="https://calendar.app.google/aedEAh1sMoKRFKx78" target="_blank" rel="noopener">Book a 20-minute call <span>→</span></a>
-    <a href="https://ig.me/m/dallytampus" target="_blank" rel="noopener">Send a message <span>→</span></a>
+  <p class="ask">What would you like to do?</p>
+  <nav class="doors" aria-label="Choose an option">
+    <a class="door main" href="#audit"><span class="n">01</span><span class="tx"><span class="tt">Get a free profile audit</span><span class="ds">3 clear fixes for your profile, free</span></span><span class="ar">→</span></a>
+    <a class="door" href="#services"><span class="n">02</span><span class="tx"><span class="tt">See my services and offers</span><span class="ds">What I do for agents, and my rates</span></span><span class="ar">→</span></a>
+    <a class="door" href="#work"><span class="n">03</span><span class="tx"><span class="tt">See my previous work</span><span class="ds">Results, Reels and designs</span></span><span class="ar">→</span></a>
+    <a class="door" href="#call"><span class="n">04</span><span class="tx"><span class="tt">Book a 20-minute call</span><span class="ds">Talk it through, no pressure</span></span><span class="ar">→</span></a>
   </nav>
-
-  <section id="services">
-    <div class="label">Services</div>
-    <h2>Work <em>with me</em></h2>
-    <div class="tiers">
-      <div class="tier"><div class="row"><div class="nm">Essentials</div><div class="pr">$750 / mo</div></div><div class="ds">Twelve posts a month, weekly stories, captions and scheduling.</div></div>
-      <div class="tier core"><div class="row"><div class="nm">Signature<small>Recommended</small></div><div class="pr">$1,200 / mo</div></div><div class="ds">Everything in Essentials, plus listing launches and replies to your comments and messages, nine to five Eastern.</div></div>
-      <div class="tier"><div class="row"><div class="nm">Team</div><div class="pr">from $1,800</div></div><div class="ds">For teams and brokerages, with recruiting content and lead follow-up.</div></div>
-      <div class="tier"><div class="row"><div class="nm">Profile Glow-Up</div><div class="pr">$397</div></div><div class="ds">A one-time refresh of your profile, highlights and link page.</div></div>
-      <div class="tier"><div class="row"><div class="nm">Property managers</div><div class="pr">from $900</div></div><div class="ds">Vacancy marketing, rental lead follow-up and owner reports.</div></div>
-    </div>
-    <p class="terms">Three-month start, then month to month. You own every post.</p>
-  </section>
-
-  <section id="faq">
-    <div class="label">Questions</div>
-    <h2>Before <em>we begin</em></h2>
-    <div class="faq">
-      <details><summary>When can I reach you?</summary><p>Monday to Friday, 9 to 5 Eastern. Messages in those hours are answered the same day.</p></details>
-      <details><summary>Do I approve posts first?</summary><p>Always. You see each week's posts before anything goes out.</p></details>
-      <details><summary>Do you use AI?</summary><p>For speed, yes. Every word is written in your voice and checked by me. AI-staged photos are always labeled.</p></details>
-      <details><summary>How do we start?</summary><p>With a free profile audit. If the fixes feel right, we book a short call.</p></details>
-    </div>
-  </section>
-
-  <footer>
-    <svg class="mono" viewBox="-20 -20 250 240" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg>
-    <p>Dally Tampus</p>
-  </footer>
 </div>
+
+<div class="view" id="v-audit">
+  <a class="back" href="#home">← All options</a>
+  <div class="vlabel">Free · start here</div>
+  <h2>Your free <em>3-fix</em> profile audit</h2>
+  <p class="intro">I look at your Instagram or Facebook profile the way a buyer or seller would, and tell you exactly what to change.</p>
+  <ul class="list">
+    <li>3 clear fixes for your profile (bio, highlights, pinned posts or link)</li>
+    <li>A check of how fast your messages get answered</li>
+    <li>Delivered within 2 business days, as a short video or PDF</li>
+    <li>Yours to use, whether or not we work together</li>
+  </ul>
+  <a class="cta" href="https://forms.gle/93WEkjmuSbftu5958" target="_blank" rel="noopener">Request my free audit</a>
+  <p class="note">A short form, about 3 minutes.</p>
+  <a class="cta2" href="#call">Prefer to talk? Book a call →</a>
+</div>
+
+<div class="view" id="v-services">
+  <a class="back" href="#home">← All options</a>
+  <div class="vlabel">Services and offers</div>
+  <h2>Work <em>with me</em></h2>
+  <p class="intro">Strategy, premium content and follow-up, built around your listings, your market and your voice. You approve every post.</p>
+  <div class="tiers">
+    <div class="tier"><div class="row"><div class="nm">3-Fix Profile Audit<small>Start here</small></div><div class="pr">Free</div></div><div class="ds">3 fixes for your profile plus a message-speed check, within 2 business days.</div></div>
+    <div class="tier"><div class="row"><div class="nm">Profile Glow-Up<small>One time</small></div><div class="pr">$397</div></div><div class="ds">New bio and name field, highlight covers, a link-in-bio page, 3 pinned posts written, a 9-post grid plan and 5 keyword reply templates.</div></div>
+    <div class="tier"><div class="row"><div class="nm">Essentials</div><div class="pr">$750 / mo</div></div><div class="ds">12 posts a month (carousels, graphics and Reels from your clips), captions, weekly stories, scheduling and a monthly report.</div></div>
+    <div class="tier core"><div class="row"><div class="nm">Signature<small>Most complete</small></div><div class="pr">$1,200 / mo</div></div><div class="ds">Everything in Essentials plus 16 posts a month, a launch kit for up to 2 new listings, comment and message replies 9 to 5 ET, a lead tracker, a monthly newsletter and a monthly strategy call.</div></div>
+    <div class="tier"><div class="row"><div class="nm">Team / Concierge</div><div class="pr">from $1,800</div></div><div class="ds">For teams and brokerages: up to 2 agent profiles or 1 team brand, recruiting content, lead follow-up and a weekly lead report.</div></div>
+    <div class="tier"><div class="row"><div class="nm">Property managers</div><div class="pr">from $900</div></div><div class="ds">Vacancy posts and Reels, rental lead follow-up and a weekly vacancy report for owners.</div></div>
+  </div>
+  <p class="terms">Monthly plans start with 3 months, then month to month with 30 days' notice. You own all content. Two revision rounds per batch. Ad spend not included.</p>
+  <div class="faq">
+    <details><summary>Do you need my passwords?</summary><p>No. You add me as a partner in Meta Business Suite, so your login stays yours.</p></details>
+    <details><summary>Do I approve posts first?</summary><p>Always. You see each batch before anything goes out.</p></details>
+    <details><summary>How does payment work?</summary><p>50% to start. For monthly plans, the other 50% is due before your first posts go live, then each month is paid in advance.</p></details>
+  </div>
+  <a class="cta" href="#call">Book a 20-minute call</a>
+  <a class="cta2" href="#audit">Or start with a free audit →</a>
+</div>
+
+<div class="view" id="v-work">
+  <a class="back" href="#home">← All options</a>
+  <div class="vlabel">Previous work</div>
+  <h2>Proof that the <em>system</em> works</h2>
+  <p class="intro">Research the buyer, show up consistently, answer every inquiry, and lead each post to one clear next step.</p>
+  <div class="case">
+    <div class="who">Client · Miss Amazing Pearl · jewelry brand</div>
+    <h3>From a quiet page to <em>47.9K views</em></h3>
+    <p>Content plan, product Reels, posters, AI-assisted visuals and customer replies.</p>
+    <div class="stats">
+      <div><b>47.9K</b><span>views</span></div>
+      <div><b>1.5K</b><span>interactions, up 978.9%</span></div>
+      <div><b>407</b><span>link clicks to the shop</span></div>
+      <div><b>628</b><span>page visits, up 148.2%</span></div>
+    </div>
+    <p class="src">Facebook, Meta Business Suite, Sep to Nov 2025.</p>
+    <div class="grid reels">
+      <img loading="lazy" src="../img/pearl-reel-1.jpg" alt="Product Reel">
+      <img loading="lazy" src="../img/pearl-reel-2.jpg" alt="Brand Reel">
+      <img loading="lazy" src="../img/pearl-reel-3.jpg" alt="Promo Reel">
+    </div>
+    <div class="grid">
+      <img loading="lazy" src="../img/pearl-g13.jpg" alt="Necklace of the Month post">
+      <img loading="lazy" src="../img/pearl-g1.jpg" alt="Gift campaign poster">
+      <img loading="lazy" src="../img/pearl-g20.jpg" alt="AI product visual">
+    </div>
+  </div>
+  <div class="case">
+    <div class="who">Case study · my own campaign</div>
+    <h3><em>155 trays</em> of eggs sold in one day</h3>
+    <p>Local research, one clear post, fast replies and doorstep delivery. The same steps that turn a listing inquiry into a showing.</p>
+    <div class="stats">
+      <div><b>155</b><span>trays sold in one day</span></div>
+      <div><b>21,710</b><span>views on the post</span></div>
+    </div>
+    <p class="src">Facebook insights from my own account.</p>
+    <div class="grid">
+      <img loading="lazy" src="../img/farm-trays.jpg" alt="Egg trays ready for delivery">
+      <img loading="lazy" src="../img/farm-eggs-1.jpg" alt="Fresh eggs">
+      <img loading="lazy" src="../img/farm-post.jpg" alt="The Facebook post">
+    </div>
+  </div>
+  <div class="case">
+    <div class="who">Real estate · since March 2026</div>
+    <h3>Marketing for a <em>Charleston, SC</em> brokerage</h3>
+    <p>Listing Reels, carousels, MLS descriptions, AI virtual staging, newsletters in Lofty CRM, lead capture and rental lead follow-up. Client details stay private; I'm happy to walk you through samples on a call.</p>
+  </div>
+  <a class="cta" href="../">See the full portfolio</a>
+  <a class="cta2" href="#audit">Get your free audit →</a>
+</div>
+
+<div class="view" id="v-call">
+  <a class="back" href="#home">← All options</a>
+  <div class="vlabel">20-minute call</div>
+  <h2>Let's <em>talk it through</em></h2>
+  <p class="intro">A relaxed 20-minute call, Monday to Friday between 9 and 5 Eastern.</p>
+  <ul class="list">
+    <li>Your goals, your listings and your market</li>
+    <li>What you'd like to take off your plate</li>
+    <li>Which option fits, if any. No pressure</li>
+    <li>A written proposal within 2 business days, if you'd like one</li>
+  </ul>
+  <a class="cta" href="https://calendar.app.google/aedEAh1sMoKRFKx78" target="_blank" rel="noopener">Pick a time</a>
+  <a class="cta2" href="https://ig.me/m/dallytampus" target="_blank" rel="noopener">Or send me a message →</a>
+</div>
+
+<footer>
+  <div class="socials">
+    <a href="https://www.instagram.com/dallytampus/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/dallytampus" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="../">Portfolio</a>
+  </div>
+  <p>Dally Tampus</p>
+</footer>
+</div>
+
+<script>
+function show(){
+  var id=(location.hash||'').replace('#','')||'home';
+  var v=document.getElementById('v-'+id)||document.getElementById('v-home');
+  document.querySelectorAll('.view').forEach(function(x){x.classList.remove('on')});
+  v.classList.add('on'); window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',show); show();
+</script>
 </body>
 </html>
