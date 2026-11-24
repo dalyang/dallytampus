@@ -163,6 +163,37 @@ footer a{text-decoration:none;color:var(--wine)}
 
 .re>*,.case>*,.about>*,.hero .wrap>*,.cols>*,.process>*{min-width:0}
 @media(max-width:860px){.re,.case,.about,.hero .wrap{grid-template-columns:minmax(0,1fr)!important}.tile{padding:12px 10px}.tile .t{font-size:13px}.demos{gap:6px}.tile .s{font-size:7px;letter-spacing:.16em}.tile .demo{top:6px;right:6px}.tile>div.s:first-of-type{visibility:hidden}}
+.mocks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.mk{position:relative;aspect-ratio:4/5;padding:14px 12px;display:flex;flex-direction:column;gap:6px;overflow:hidden;font-size:11px;line-height:1.35}
+.mk .demo{position:absolute;top:8px;right:8px;font-size:7.5px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--sand);padding:1px 5px;background:rgba(250,247,242,.9)}
+.mk .s{font-size:7.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);padding-right:38px}
+.mk .t{font-family:var(--serif);font-weight:300;font-size:clamp(13px,1.5vw,17px);line-height:1.15}
+.mk .t em{font-style:italic}
+.mk.reel{background:var(--wine);color:var(--white);aspect-ratio:9/16;justify-content:flex-end;grid-row:span 2}
+.mk.reel .s{position:absolute;top:12px;left:12px;color:var(--sand)}
+.mk.reel .t{font-size:clamp(17px,2vw,22px)}
+.mk.reel .m{font-size:10px;color:#E8DCCB;letter-spacing:.06em}
+.mk.reel .k{margin-top:8px;border-top:1px solid rgba(203,183,154,.5);padding-top:8px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+.mk.car{background:var(--cream);color:var(--wine);justify-content:space-between}
+.mk.car .dots{display:flex;gap:4px}.mk.car .dots i{width:5px;height:5px;border-radius:50%;background:var(--sand)}.mk.car .dots i:first-child{background:var(--wine)}
+.mk.news{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.mk.news .bar{background:var(--wine);color:var(--white);margin:-14px -12px 4px;padding:8px 12px;font-family:var(--serif);font-size:11px}
+.mk.news .t{color:var(--wine);font-size:13px}
+.mk .ln{height:4px;background:var(--line);width:90%}.mk .ln.s{width:60%}
+.mk.news .row{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;flex:1;min-height:20px}.mk.news .row i{background:var(--beige)}
+.mk .btn2{align-self:flex-start;background:var(--wine);color:var(--white);font-size:7.5px;letter-spacing:.16em;text-transform:uppercase;padding:4px 8px}
+.mk.link{background:var(--white);border:1px solid var(--line);color:var(--wine)}
+.mk.link .d{border:1px solid var(--line);background:#fff;padding:5px 8px;font-size:10px}
+.mk.link .d:first-of-type{background:var(--wine);color:var(--white);border-color:var(--wine)}
+.mk.prop{background:var(--cream);color:var(--ink)}
+.mk.prop .ba{font-size:9.5px;color:var(--muted);border-left:2px solid var(--line);padding-left:6px}
+.mk.prop .ba b{display:block;font-size:7.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.mk.prop .ba.after{border-color:var(--wine);color:var(--wine)}
+.mk.prop .why2{font-size:9px;font-style:italic;color:var(--muted);margin-top:auto}
+.mk.track{background:#fff;border:1px solid var(--line);color:var(--ink);grid-column:span 2;aspect-ratio:auto}
+.mk.track .tr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;border-bottom:1px solid var(--line);padding:5px 0;font-size:10px}
+.mk.track .tr.h{font-size:7.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+@media(max-width:520px){.mocks{gap:6px}.mk{padding:10px 8px}.mk .t{font-size:12.5px}.mk.reel .t{font-size:15px}.mk .demo{top:5px;right:5px;font-size:6.5px}.mk .s{font-size:6.5px;padding-right:30px}.mk.prop .ba,.mk.link .d,.mk.track .tr{font-size:8.5px}}
 /* lightbox */
 .lb{position:fixed;inset:0;background:rgba(43,43,43,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:24px;cursor:zoom-out}
 .lb.on{display:flex}
@@ -223,39 +254,42 @@ footer a{text-decoration:none;color:var(--wine)}
   </div>
 </section>
 
-<section id="realestate">
-  <div class="wrap re">
-    <div>
-      <div class="label">Real estate experience</div>
-      <h2>I already do this <em>every day</em></h2>
-      <p class="lead">Since March 2026 I've handled marketing for a Charleston, SC real estate brokerage and property management company.</p>
-      <ul class="list">
-        <li><b>Full marketing strategy</b>: market, competitor and audience research, positioning, content pillars, monthly plans</li>
-        <li><b>Listing content</b>: 9:16 listing Reels, Canva carousels, MLS and rental listing descriptions</li>
-        <li><b>AI virtual staging</b>, always labeled for compliance</li>
-        <li><b>Email newsletters</b> in Lofty CRM, with open rates compared to past campaigns</li>
-        <li><b>Lead capture</b>: link-in-bio page, lead forms, keyword reply templates, a lead log</li>
-        <li><b>Lead follow-up</b> for rental inquiries, plus weekly vacancy reports for owners</li>
-        <li><b>Profile proposals</b>: before-and-after mockups of each account, with the reason for every change</li>
-      </ul>
-      <p class="caption">Client names, addresses and results stay private. I'm happy to walk you through samples on a call.</p>
-    </div>
-    <div>
-      <div class="demos" aria-label="Sample real estate designs with demo details">
-        <div class="tile w"><span class="demo">DEMO</span><div class="s">Carousel cover</div><div class="t">What happens after someone <em>comments</em> on your post?</div><div class="s">Dally</div></div>
-        <div class="tile c"><span class="demo">DEMO</span><div class="s">Just listed</div><div class="t">A quiet street, a <em>big</em> backyard, 4 bed · 3 bath</div><div class="s">Maple Ridge · demo</div></div>
-        <div class="tile l"><span class="demo">DEMO</span><div class="s">Free guide</div><div class="t">5 texts to send before a lead goes <em>cold</em></div><div class="s">Comment FOLLOW-UP</div></div>
-      </div>
-      <p class="caption">Sample designs in my editorial style, with demo details only.</p>
-    </div>
-  </div>
-</section>
 
 <section id="work">
   <div class="wrap">
     <div class="label">Selected work</div>
     <h2>Proof that the <em>system</em> works</h2>
-    <p class="lead">Different products, same method: research the buyer, show up consistently, answer every inquiry, and lead each post to one clear next step.</p>
+    <p class="lead">Real estate first, then two very different products. Same method: research the buyer, show up consistently, answer every inquiry, and lead each post to one clear next step.</p>
+
+    <div class="case">
+      <div>
+        <div class="who">Client · Real estate brokerage &amp; property management · Charleston, SC · since March 2026</div>
+        <h3>The whole marketing seat for a <em>real estate</em> company</h3>
+        <p>A brokerage and property management company needed one person for social media, listing content, emails and leads, working US hours. That's my job there every day.</p>
+        <ol class="steps">
+          <li>Researched the market, competitors and audience, then set the positioning and content pillars from their Meta Business Suite data</li>
+          <li>Built a profile proposal deck: mockups of new Instagram, Facebook and TikTok profiles, with the reason for every change, for owner approval</li>
+          <li>Planned the content month by month: 9:16 listing Reels with comment-keyword calls to action, Canva carousels and stories</li>
+          <li>Wrote listing descriptions for the MLS and rental sites, plus AI virtual staging, always labeled</li>
+          <li>Wrote and designed email newsletters in Lofty CRM, and compared open rates with past campaigns</li>
+          <li>Set up lead capture: a link-in-bio page with one door per audience, Google Forms, a lead log and keyword reply templates</li>
+          <li>Followed up rental leads by text, tracked them in the CRM, and sent owners a weekly vacancy report</li>
+          <li>Built a marketing dashboard with Claude to plan content and get approvals</li>
+        </ol>
+        <p class="src">Results and real samples are shared on a call. Client names, addresses, logos and data stay private.</p>
+      </div>
+      <div>
+        <div class="glabel">Sample work in this style (demo details)</div>
+        <div class="mocks">
+          <div class="mk reel"><span class="demo">DEMO</span><div class="s">Listing Reel · 9:16</div><div class="t">Just listed in <em>Maple Ridge</em></div><div class="m">4 bed · 3 bath · 2,450 sq ft</div><div class="k">Comment TOUR for the full video</div></div>
+          <div class="mk car"><span class="demo">DEMO</span><div class="s">Carousel · renters</div><div class="t">5 things to check <em>before</em> you sign a lease</div><div class="dots"><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="mk news"><span class="demo">DEMO</span><div class="bar">Market Note</div><div class="t">3 homes we love this week</div><div class="ln"></div><div class="ln s"></div><div class="row"><i></i><i></i><i></i></div><div class="btn2">See the listings</div></div>
+          <div class="mk link"><span class="demo">DEMO</span><div class="s">Link-in-bio · one door each</div><div class="d">I'm buying</div><div class="d">I'm selling</div><div class="d">I'm renting</div><div class="d">I own a rental</div></div>
+          <div class="mk prop"><span class="demo">DEMO</span><div class="s">Profile proposal</div><div class="ba"><b>Today</b>Real estate | Homes for sale | DM us</div><div class="ba after"><b>Proposed</b>Homes, rentals and local tips in Maple Ridge · Comment HOME for listings</div><div class="why2">Why: one audience, one promise, one action</div></div>
+          <div class="mk track"><span class="demo">DEMO</span><div class="s">Lead tracker</div><div class="tr h"><span>Source</span><span>Interest</span><span>Next</span></div><div class="tr"><span>IG comment</span><span>2-bed rental</span><span>Text today</span></div><div class="tr"><span>Form</span><span>Selling</span><span>Call Fri</span></div><div class="tr"><span>Story reply</span><span>Buying</span><span>Send list</span></div></div>
+        </div>
+      </div>
+    </div>
 
     <div class="case">
       <div>
