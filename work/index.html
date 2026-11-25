@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dally Tampus | Creator & Influencer Marketing</title>
+<meta name="description" content="Creator sourcing, campaign coordination and short-form video for brands on Instagram and TikTok.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#4E1220;--burgundy:#7A1F2B;--deep:#3A0D18;--white:#FAF7F2;--cream:#F3ECE2;--beige:#E8DCCB;--sand:#CBB79A;--gold:#94764F;--ink:#2B2B2B;--muted:#6E5F57;--line:#E6DBCC;--serif:'Fraunces',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.label{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:300;color:var(--wine);letter-spacing:-.01em;line-height:1.15}
+h1 em,h2 em,h3 em{font-style:italic}
+h2{font-size:clamp(30px,4.4vw,46px);margin-top:12px}
+.lead{font-size:17px;color:var(--muted);max-width:660px;margin-top:18px}
+section{padding:96px 0;border-top:1px solid var(--line)}
+.btn{display:inline-block;text-decoration:none;background:var(--wine);color:var(--white);padding:17px 30px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;transition:background .2s}
+.btn:hover,.btn:focus{background:var(--burgundy)}
+.link{display:inline-block;text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--wine);padding:17px 4px;border-bottom:1px solid var(--sand)}
+.link:hover{border-color:var(--wine)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:22px;height:21px}
+.brand span{font-size:12px;letter-spacing:.3em;color:var(--wine);font-weight:500}
+nav.main{display:flex;align-items:center;gap:28px}
+nav.main a{text-decoration:none;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+nav.main a:hover{color:var(--wine)}
+nav.main a.btn{color:var(--white);padding:12px 18px;font-size:11px}
+@media(max-width:760px){nav.main a:not(.btn){display:none}}
+.hero{padding:72px 0 0;border:0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(38px,5.8vw,68px);margin-top:18px}
+.hero .lead{font-size:18px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:36px}
+.hero .copy{padding-bottom:88px}
+.portrait{position:relative;align-self:end}
+.portrait:before{content:"";position:absolute;left:8%;right:2%;bottom:0;top:16%;background:var(--beige);border-radius:220px 220px 0 0}
+.portrait img{position:relative;width:100%;max-width:420px;margin:0 auto}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero .copy{padding-bottom:8px}.portrait img{max-width:300px}.portrait:before{left:18%;right:18%}}
+.facts{background:var(--wine);color:var(--white)}
+.facts .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;padding-top:22px;padding-bottom:22px}
+.facts div{font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.facts b{color:var(--sand);font-weight:500}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px}
+.cols .n{font-family:var(--serif);font-style:italic;color:var(--sand);font-size:28px}
+.cols h3{font-size:24px;margin-top:8px}
+.cols p{color:var(--muted);margin-top:10px;font-size:15.5px}
+@media(max-width:820px){.cols{grid-template-columns:1fr;gap:36px}}
+.reels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:48px}
+.reel{aspect-ratio:9/16;background:var(--cream);position:relative;overflow:hidden}
+.reel img,.reel video{width:100%;height:100%;object-fit:cover}
+.reel .cap{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 12px;background:linear-gradient(transparent,rgba(58,13,24,.85));color:var(--white);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.reel.slot{border:1px dashed var(--sand);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+@media(max-width:820px){.reels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:56px}
+.case .who{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.case h3{font-size:clamp(26px,3vw,34px);margin-top:10px}
+.steps{list-style:none;margin-top:24px;border-top:1px solid var(--line)}
+.steps li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.steps li b{font-weight:500;color:var(--wine)}
+.stats{display:flex;gap:40px;margin-top:28px;flex-wrap:wrap}
+.stats b{display:block;font-family:var(--serif);font-weight:300;font-size:40px;color:var(--wine);line-height:1}
+.stats span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.src{font-size:12.5px;color:var(--muted);margin-top:14px}
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.gal img{aspect-ratio:4/5;object-fit:cover;width:100%}
+@media(max-width:820px){.case{grid-template-columns:1fr;gap:32px}}
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.score div{padding:28px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.score h3{font-size:21px}
+.score p{color:var(--muted);font-size:15px;margin-top:8px}
+@media(max-width:820px){.score{grid-template-columns:1fr}}
+.flow{list-style:none;counter-reset:f;margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.flow li{counter-increment:f;border-top:1px solid var(--sand);padding-top:16px;font-size:15px;color:var(--muted)}
+.flow li:before{content:"0" counter(f);display:block;font-family:var(--serif);font-style:italic;color:var(--gold);font-size:22px}
+.flow li b{display:block;color:var(--wine);font-weight:500;margin-bottom:4px}
+@media(max-width:820px){.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.flow{grid-template-columns:1fr}}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
+.more h3{font-size:24px}
+.more p{color:var(--muted);margin-top:8px;font-size:15.5px}
+@media(max-width:820px){.more{grid-template-columns:1fr}}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tools span{border:1px solid var(--line);padding:8px 14px;font-size:13px}
+.end{background:var(--wine);color:var(--white);text-align:center}
+.end h2{color:var(--white)}
+.end .lead{color:var(--beige);margin:18px auto 0}
+.end .btn{background:var(--white);color:var(--wine);margin-top:36px}
+.end .link{color:var(--white);border-color:var(--sand);margin-left:24px}
+footer{padding:28px 0;font-size:12px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><svg viewBox="0 0 210 200" aria-hidden="true"><g fill="#4E1220"><rect x="62" y="0" width="28" height="200"/><path d="M86 0 H110 A100 100 0 0 1 110 200 H104 V172 H110 A72 72 0 0 0 110 28 H86 Z"/><rect x="0" y="62" width="150" height="28"/></g></svg><span>DALLY TAMPUS</span></a>
+  <nav class="main"><a href="#work">My work</a><a href="#screen">Creators</a><a href="#how">How I work</a><a class="btn" href="#contact">Contact</a></nav>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+  <div class="copy">
+    <div class="label">Creator campaigns · Instagram &amp; TikTok</div>
+    <h1>Your creators, matched. <em>Your campaigns, on track.</em></h1>
+    <p class="lead">I'm Dally. You keep your creators happy and your brands coming back. I'll handle the matching, the applications and the follow-ups, and you'll know where every campaign stands before you have to ask.</p>
+    <div class="actions"><a class="btn" href="#how">See how I'd work with you</a><a class="link" href="#work">Watch my videos</a></div>
+  </div>
+  <div class="portrait"><img src="../img/dally-portrait.png" alt="Dally Tampus"></div>
+</div></section>
+
+<div class="facts"><div class="wrap">
+  <div><b>Instagram</b> + <b>TikTok</b></div><div>Creator coordination</div><div>Films &amp; edits</div><div>US business hours</div>
+</div></div>
+
+<section><div class="wrap">
+  <div class="label">I know your week</div>
+  <h2>A full roster is <em>a full-time job.</em></h2>
+  <p class="lead">Briefs coming in. Applications to send on five platforms. Creators waiting for an answer today. You need someone who picks it up the first time and doesn't ask the same question twice. That's how I work.</p>
+  <div class="cols">
+    <div><div class="n">01</div><h3>I've been on the creator side</h3><p>I made TikTok affiliate videos on my own account. I know what a clear brief feels like, and what makes a creator say yes to a brand.</p></div>
+    <div><div class="n">02</div><h3>I've matched talent to a brand</h3><p>For a pearl jewelry brand, I found a model who looked like their buyer, planned the shoots and filmed with her, so the brand finally had a real face.</p></div>
+    <div><div class="n">03</div><h3>I keep many plates spinning</h3><p>For a US real estate company, I ran three platforms, the content calendar, approvals and lead follow-up at once, all in one system I built.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="label">My work</div>
+  <h2>Content I filmed <em>and edited.</em></h2>
+  <p class="lead">The product Reels I shot with a model for a pearl jewelry brand. Videos from my own TikTok affiliate account are coming soon.</p>
+  <div class="reels">
+    <!-- TikTok affiliate videos: replace each .slot with <div class="reel"><video src="videos/tiktok-1.mp4" controls playsinline preload="metadata"></video><div class="cap">My TikTok</div></div> -->
+    <!-- SLOT: <div class="reel slot">TikTok video 1</div> -->
+    <!-- SLOT: <div class="reel slot">TikTok video 2</div> -->
+    <!-- SLOT: <div class="reel slot">TikTok video 3</div> -->
+    <!-- SLOT: <div class="reel slot">TikTok video 4</div> -->
+    <div class="reel"><img src="../img/pearl-reel-1.jpg" alt="Product Reel for Miss Amazing Pearl"><div class="cap">Miss Amazing Pearl</div></div>
+    <div class="reel"><img src="../img/pearl-reel-2.jpg" alt="Product Reel for Miss Amazing Pearl"><div class="cap">Miss Amazing Pearl</div></div>
+    <div class="reel"><img src="../img/pearl-reel-3.jpg" alt="Product Reel for Miss Amazing Pearl"><div class="cap">Miss Amazing Pearl</div></div>
+    <div class="reel"><img src="../img/pearl-reel-4.jpg" alt="Product Reel for Miss Amazing Pearl"><div class="cap">Miss Amazing Pearl</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="label">A story from my work</div>
+  <div class="case">
+    <div>
+      <div class="who">Miss Amazing Pearl · jewelry brand, Perth · part-time, 2024 to 2025</div>
+      <h3>Beautiful pearls, <em>and no one wearing them.</em></h3>
+      <p class="lead" style="font-size:16px">The brand had lovely products and no face on camera. So I went looking for one.</p>
+      <ul class="steps">
+        <li><b>I found the talent.</b> A model whose look matched the brand's buyer.</li>
+        <li><b>I planned the shoots.</b> Around gifting moments and a "Necklace of the Month".</li>
+        <li><b>I filmed and edited.</b> Product Reels with the model, plus posters, carousels and AI visuals.</li>
+        <li><b>I looked after the store.</b> Shopify listings, site updates, customer inquiries and calls.</li>
+      </ul>
+      <div class="stats"><div><b>47.9K</b><span>views</span></div></div>
+      <p class="src">Source: Meta Business Suite, September to November 2025.</p>
+    </div>
+    <div class="gal">
+      <img src="../img/pearl-g1.jpg" alt=""><img src="../img/pearl-g3.jpg" alt=""><img src="../img/pearl-g6.jpg" alt="">
+      <img src="../img/pearl-g12.jpg" alt=""><img src="../img/pearl-g13.jpg" alt=""><img src="../img/pearl-g19.jpg" alt="">
+    </div>
+  </div>
+</div></section>
+
+<section id="screen"><div class="wrap">
+  <div class="label">Free to use</div>
+  <h2>What I check <em>before I put a creator forward.</em></h2>
+  <p class="lead">Follower count is the last thing I look at. Here's the list I use. Keep it, even if we never work together.</p>
+  <div class="score">
+    <div><h3>Audience fit</h3><p>Do their viewers look like the brand's buyer? I read the comments to see who's really watching.</p></div>
+    <div><h3>Real engagement</h3><p>Views that hold steady post to post, comments from real people, and saves and shares, not just likes.</p></div>
+    <div><h3>The X factor</h3><p>A hook in the first two seconds, a voice you remember, and trends done their own way.</p></div>
+    <div><h3>Proof it sells</h3><p>"Where did you get that?" comments, affiliate links that convert, brands that booked them twice.</p></div>
+    <div><h3>Brand safety</h3><p>Past content, competing brands, and clear #ad disclosures. No surprises for the brand later.</p></div>
+    <div><h3>Reliability</h3><p>How fast they reply, whether they hit deadlines, and how they take feedback on a first draft.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="label">How I work</div>
+  <h2>You'll always know <em>where things stand.</em></h2>
+  <div class="score">
+    <div><h3>Updates before you ask</h3><p>A short end-of-day note: what moved, what's waiting, and what I need from you.</p></div>
+    <div><h3>One tracker for everything</h3><p>Every creator, campaign and due date in one place, so nothing slips between platforms.</p></div>
+    <div><h3>Your hours, your tools</h3><p>Full time on US business hours. I work in your Slack, inbox and creator platforms.</p></div>
+    <div><h3>Asked once, written down</h3><p>When you explain how you like something done, I write it into a checklist and keep to it.</p></div>
+    <div><h3>Drafts checked first</h3><p>I check the hook, the product and the call to action before any video goes to a brand.</p></div>
+    <div><h3>Quick to learn</h3><p>I picked up Lofty, Flexmls and RentSmart on the job. LTK, ShopMy and Aspire are next on my list.</p></div>
+  </div>
+  <ol class="flow">
+    <li><b>Read the brief</b>Who the brand sells to, the goal, the budget, the deadline.</li>
+    <li><b>Shortlist</b>Match creators from your roster using the six checks.</li>
+    <li><b>Apply &amp; pitch</b>Send applications with a clear reason each creator fits.</li>
+    <li><b>Brief the creator</b>Talking points, must-haves, dates and disclosure rules on one page.</li>
+    <li><b>Review drafts</b>Hook, product and call to action checked before it goes out.</li>
+    <li><b>Track posting</b>Every live date and link logged the same day.</li>
+    <li><b>Report back</b>Views, engagement, clicks and sales to the brand and the creator.</li>
+    <li><b>Rebook the winners</b>Note what worked, so the next pitch is stronger.</li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <div class="label">More of my work</div>
+  <div class="more">
+    <div><h3>A US real estate company</h3><p>Eight months full time, March to October 2026. Instagram, Facebook and TikTok, listing Reels, Canva carousels, email newsletters and lead follow-up, plus an app I built with Claude to plan content and approvals.</p></div>
+    <div><h3>My own campaign: farm-fresh eggs</h3><p>155 trays sold in one day from my own Facebook posts. One post reached 21,710 views and 1,505 engagements (Facebook insights).</p></div>
+  </div>
+  <div class="tools"><span>TikTok</span><span>Instagram</span><span>CapCut</span><span>AI video &amp; image editing</span><span>Canva</span><span>Meta Business Suite</span><span>Shopify</span><span>ChatGPT</span><span>Claude</span><span>Google Workspace</span></div>
+  <p style="margin-top:22px"><a class="link" href="../index.html">See my full portfolio</a></p>
+</div></section>
+
+<section class="end" id="contact"><div class="wrap">
+  <div class="label" style="color:var(--sand)">Let's talk</div>
+  <h2>Tell me about <em>your roster.</em></h2>
+  <p class="lead">I'm ready for a full-time role on US business hours. Send me a message and I'll reply the same day.</p>
+  <a class="btn" href="https://www.linkedin.com/in/dallytampus">Message me on LinkedIn</a><a class="link" href="../index.html">Full portfolio</a>
+</div></section>
+<footer>Dally Tampus · Creator campaigns for Instagram &amp; TikTok</footer>
+</body>
+</html>
