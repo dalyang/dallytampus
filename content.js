@@ -7,7 +7,7 @@ const E=()=>({id:'',kind:''});
 const reel=(type,cap,m)=>Object.assign(m||E(),{type,cap});
 const car=(pillar,cap,n)=>({pillar,cap,slides:Array.from({length:n||3},E)});
 
-const INTRO="Here's what it looks like working with me as your Social Media Manager.";
+const INTRO="Here's what it looks like working with me as your Social Media Marketer.";
 
 /* Real Estate & Property Management: the fully set-up example industry */
 const realEstate={
@@ -140,17 +140,17 @@ window.DEFAULT_STATE={
     brand:'Dally',brandEm:'Tampus',
     book:'https://docs.google.com/forms/d/e/1FAIpQLSdfgh48hf5YaFG3swcbRvCBdPRD_6QPkxwNd_zwkfLE4HbmLw/viewform',email:'',instagram:'https://www.instagram.com/dallytampus/',facebook:'https://www.facebook.com/dallytampus',linkedin:'https://www.linkedin.com/in/dallytampus',tiktok:'',
     navCta:'Book a call',
-    footer:'Social media management for small businesses and growing brands. From post to paying customer.'
+    footer:'Social media marketing for small businesses and growing brands. From post to paying customer.'
   },
   sections:[
     {type:'hero',id:'top',nav:'',
-     eyebrow:'Social Media Manager · for small businesses and growing brands',name:'Dally',nameEm:'Tampus',
+     eyebrow:'Social Media Marketer · for small businesses and growing brands',name:'Dally',nameEm:'Tampus',
      intro:'*From post to paying customer.* I make your content, handle your comments and messages, and follow up every inquiry, so your posts turn into real customers. You send the photos and clips and approve. I manage the rest.',
      btn1:'View my work',btn2:'Book a call with me',photo:img('dally-cutout.png'),
      line:'New campaign for a different industry every week'},
     {type:'about',id:'about',nav:'About',title:'About *me*',flip:false,
      paras:[
-      "I'm Dally, a Social Media Manager for small businesses and growing brands, from real estate teams to studios and online shops. My goal is simple: you'll always know what to post, what to say and why it works.",
+      "I'm Dally, a Social Media Marketer for small businesses and growing brands, from real estate teams to studios and online shops. My goal is simple: you'll always know what to post, what to say and why it works.",
       'I think like a strategist first. Before anything gets filmed, I study your market, your competitors and what your buyers actually search for. Then I build a calendar around it.',
       "Most owners don't need more ideas. They need someone to guide them on camera. I write your hooks and scripts, then guide you step by step with a shot list, simple angles and short guide videos you can copy.",
       'Every week I build a campaign for a different industry, so you can see exactly what working with me looks like for a brand like yours.'
