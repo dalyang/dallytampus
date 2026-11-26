@@ -606,3 +606,4 @@ body.editing .lpic{cursor:pointer;outline:1px dashed var(--lpa);outline-offset:2
 @media (hover:none){.fxbar{display:flex}}
 @media (max-width:640px){.fx-w-half{max-width:100%}.fx-h.fx-xl h3{font-size:2.4rem}.fx-h.fx-l h3{font-size:2rem}}
 .guide.noreel{grid-template-columns:1fr}
+html,body{overflow-x:clip}

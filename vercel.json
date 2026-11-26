@@ -65,5 +65,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/links",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/links/",
+      "destination": "/",
+      "permanent": false
+    }
   ]
 }

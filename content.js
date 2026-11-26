@@ -7,7 +7,7 @@ const E=()=>({id:'',kind:''});
 const reel=(type,cap,m)=>Object.assign(m||E(),{type,cap});
 const car=(pillar,cap,n)=>({pillar,cap,slides:Array.from({length:n||3},E)});
 
-const INTRO="Here's what it looks like working with me as your Social Media Marketer.";
+const INTRO="Here's what it looks like working with me as your Social Media Manager.";
 
 /* Real Estate & Property Management: the fully set-up example industry */
 const realEstate={
@@ -140,17 +140,17 @@ window.DEFAULT_STATE={
     brand:'Dally',brandEm:'Tampus',
     book:'https://docs.google.com/forms/d/e/1FAIpQLSdfgh48hf5YaFG3swcbRvCBdPRD_6QPkxwNd_zwkfLE4HbmLw/viewform',email:'',instagram:'https://www.instagram.com/dallytampus/',facebook:'https://www.facebook.com/dallytampus',linkedin:'https://www.linkedin.com/in/dallytampus',tiktok:'',
     navCta:'Book a call',
-    footer:'Social media marketing for local businesses and growing brands.'
+    footer:'Social media management for small businesses and growing brands. From post to paying customer.'
   },
   sections:[
     {type:'hero',id:'top',nav:'',
-     eyebrow:'Social Media Marketer · for local businesses and growing brands',name:'Dally',nameEm:'Tampus',
-     intro:'I plan your content, guide you on camera, edit every reel and grow your page, so your brand looks as good on the feed as it does in real life.',
+     eyebrow:'Social Media Manager · for small businesses and growing brands',name:'Dally',nameEm:'Tampus',
+     intro:'*From post to paying customer.* I make your content, handle your comments and messages, and follow up every inquiry, so your posts turn into real customers. You send the photos and clips and approve. I manage the rest.',
      btn1:'View my work',btn2:'Book a call with me',photo:img('dally-cutout.png'),
      line:'New campaign for a different industry every week'},
     {type:'about',id:'about',nav:'About',title:'About *me*',flip:false,
      paras:[
-      "I'm Dally, a Social Media Marketer for local businesses and growing brands, from real estate teams to studios and online shops. My goal is simple: you'll always know what to post, what to say and why it works.",
+      "I'm Dally, a Social Media Manager for small businesses and growing brands, from real estate teams to studios and online shops. My goal is simple: you'll always know what to post, what to say and why it works.",
       'I think like a strategist first. Before anything gets filmed, I study your market, your competitors and what your buyers actually search for. Then I build a calendar around it.',
       "Most owners don't need more ideas. They need someone to guide them on camera. I write your hooks and scripts, then guide you step by step with a shot list, simple angles and short guide videos you can copy.",
       'Every week I build a campaign for a different industry, so you can see exactly what working with me looks like for a brand like yours.'
@@ -171,22 +171,26 @@ window.DEFAULT_STATE={
     {type:'services',id:'services',nav:'Services',title:'My *services*',
      items:[
       {t:'Social media strategy',d:'Market research, content pillars and a monthly calendar built around how your buyers actually scroll.',tag:''},
-      {t:'Content creation',d:'Posts, carousels and stories designed from strategy, not templates.',tag:''},
+      {t:'Content creation',d:'I make all your post content: carousels, graphics, stories and captions, designed from strategy, not templates.',tag:''},
       {t:'Reels & video editing',d:'Hooks, captions, pacing and trending audio, edited to stop the scroll.',tag:''},
       {t:'AI visuals',d:'AI-assisted visuals only where they genuinely help, like virtual staging or product scenes. Always on-brand.',tag:''},
-      {t:'Account management',d:'Posting, scheduling, replies and community engagement, handled every week.',tag:''},
+      {t:'Posting & engagement handling',d:'I post and schedule everything, reply to comments and messages, and engage with your community every week. You never have to log in.',tag:''},
+      {t:'Lead capture & follow-up',d:'A bio link with a door for every kind of customer, comment keywords that start conversations, and quick replies to every inquiry during US business hours, all logged so no lead slips away.',tag:'New'},
+      {t:'Email newsletters',d:'Written, designed and sent for you, so past customers come back and new ones stay warm.',tag:''},
       {t:'Ad-ready content',d:'Ad creative only: I make the videos and graphics for your ads from posts that already perform. You or your ads team run the campaigns.',tag:''},
       {t:'Filming guidance',d:'Before every shoot you get your script, a shot list with simple angles and short guide videos to copy. Film on your own time. Phone only, no studio needed.',tag:'New'}
      ]},
-    {type:'process',id:'process',nav:'How I work',title:'How I *work*',
+    {type:'process',id:'process',nav:'How I work',title:'The *Post-to-Customer* System',
      items:[
       {t:'Discovery call',d:'A free 20-minute call about your brand, your goals and who you want to reach.'},
       {t:'Plan',d:'We agree on platforms, posting rhythm and what success looks like.'},
       {t:'Market research',d:'Your competitors, your audience and what is already working in your industry.'},
       {t:'Strategy & content calendar',d:'Content pillars, hooks and a month of posts mapped out before anything is filmed.'},
-      {t:'You film, I guide',d:'You film on your own time with my script, shot list, angles and guide videos. Just your phone.'},
+      {t:'You send, I create',d:'Send me your photos and short phone clips. I tell you exactly what to film (script, shot list and guide videos), then I create everything.'},
       {t:'Editing & scheduling',d:'I edit your footage, design the posts and schedule everything.'},
-      {t:'Post, engage & report',d:'Posting, replies and engagement, plus a simple monthly report on what worked.'}
+      {t:'Post & capture',d:'I post and schedule everything. Every post ends with one clear next step: a keyword, a message or a link with a door for each kind of customer.'},
+      {t:'Reply & follow up',d:'I answer inquiries during US business hours and log every lead, so nobody who reaches out is forgotten.'},
+      {t:'Report',d:'Each month you see what brought inquiries and sales, what worked, and what we do next.'}
      ]},
     {type:'results',id:'results',nav:'Results',title:'Real *results*',sub:'Real numbers from real client pages. No ads, just content.',
      items:[
@@ -203,8 +207,8 @@ window.DEFAULT_STATE={
       {name:'Your brand',ind:'Could be next',logo:E()}
      ]},
     {type:'contact',id:'contact',nav:'Contact',title:"Let's work *together*",
-     text:"Tell me about your brand. I'll come back with a plan for your feed and what we'd film first.",
-     cards:[{k:'book',t:'Book a call with me',d:'Pick a time that suits you · 20 minutes'},{k:'email',t:'Email',d:''},{k:'instagram',t:'Instagram',d:''},{k:'facebook',t:'Facebook',d:''},{k:'linkedin',t:'LinkedIn',d:''}]}
+     text:"Tell me about your brand. I'll come back with a plan for your feed and what we'd film first. Not ready for a call? DM me AUDIT on Instagram for a free profile audit.",
+     cards:[{k:'book',t:'Book a call with me',d:'Pick a time that suits you · 20 minutes'},{k:'email',t:'Email',d:''},{k:'instagram',t:'Instagram',d:'DM me AUDIT for a free profile audit'},{k:'facebook',t:'Facebook',d:''},{k:'linkedin',t:'LinkedIn',d:''}]}
   ]
 };
 })();
